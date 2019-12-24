@@ -230,6 +230,10 @@ body {
   font-size: 14px;
 }
 
+.img_wrap:hover{
+  transform:scale(1.1);
+}
+
 
 /* 브랜드 추천 */
 #brand {

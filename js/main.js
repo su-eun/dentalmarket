@@ -22,7 +22,9 @@ function show_product(el, category_name, list_num) {
   for(var i = 0; i < list_num; i++) {
     list += '<li>';
     list += '<a href="#">';
+    list += '<div class="img_wrap">';
     list += '<img src="' + buff[i].img_url + '">';
+    list += '</div>'
     list += '<span class="title">' + buff[i].title + '</span>';
     list += '<span class="name">' + buff[i].name + '</span>'
 
