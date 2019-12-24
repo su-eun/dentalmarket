@@ -83,6 +83,7 @@ $(function(){
     controls: false,        // prev, next 표시/비표시
     pager: true,            // 하단 인디케이터 표시/비표시
     responsive: false,
+    autoHover:true,          // 마우스가 올라가면 재생 정지
   });
 
   $('.brand-slider').bxSlider({
