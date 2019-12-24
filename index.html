@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>DentalMarket</title>
+  <!-- 웹폰트 -->
+  <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- FontAwesome(폰트 아이콘) -->
+  <script src="https://kit.fontawesome.com/42bc809b80.js" crossorigin="anonymous"></script>
+  <!-- bx slider CSS -->
+  <link rel="stylesheet" href="js/bxslider/jquery.bxslider.min.css">
+  <!-- JQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <!-- bx slider JS -->
+  <script src="js/bxslider/jquery.bxslider.min.js"></script>
+  <!-- 상품데이터 -->
+  <script src="js/data.js"></script>
+  <!-- 사용자 자바스크립트 -->
+  <script src="js/main.js"></script>
+</head>
+<body>
+  <header id="main_header">
+    <div class="container">
+      <h1>
+        <a href="./index.html">
+          <img src="images/logo.JPG" alt="logo">
+        </a>
+      </h1>
+      <!-- 검색창 -->
+      <form id="search_box">
+        <input 
+          type="text"
+          placeholder="NEW! G.U.M 온라인 독점 할인 이벤트!"
+        >
+        <button type="submit">
+          <i class="fas fa-search"></i>
+        </button>
+      </form>
+
+      <!-- 유틸리티 메뉴 -->
+      <nav id="util_menu">
+        <a href="#"><i class="fas fa-user"></i></a>
+        <a href="#"><i class="fas fa-shopping-cart"></i></a>
+        <a href="#"><i class="fas fa-truck"></i></a>
+        <a href="#"><i class="fas fa-heart"></i></a>
+      </nav>
+    </div><!-- end container-->
+  </header>
+
+  <!-- 메인 GNB -->
+  <nav id="main_gnb">
+    <div class="container">
+      <button id="category_btn">
+        <i class="fas fa-bars"></i>
+        <span>카테고리</span>
+      </button>
+
+      <ul>
+        <li><a href="#">특가존</a></li>
+        <li><a href="#">랭킹</a></li>
+        <li><a href="#">브랜드</a></li>
+        <li><a href="#">이벤트</a></li>
+        <li><a href="#">쿠폰</a></li>
+        <li><a href="#">맴버십</a></li>
+        <li><a href="#">매거진</a></li>
+        <li><a href="#">핫딜</a></li>
+      </ul>
+    </div><!-- end container -->
+  </nav>
+
+  <!-- 카테고리 메뉴 목록 -->
+  <nav id="category">
+    <div class="container"><!-- end container -->
+      <dl>
+        <dt>Instrument(기구)</dt>
+        <dd>진단용기구</dd>
+        <dd>보철/보존</dd>
+        <dd>치주</dd>
+        <dd>외과</dd>
+      </dl>
+      <dl>
+        <dt>Material(재료)</dt>
+        <dd>진단</dd>
+        <dd>보철/보존</dd>
+        <dd>치주</dd>
+        <dd>외과</dd>
+      </dl>
+    </div><!-- end container -->
+  </nav>
+
+  <!-- 메인 배너 -->
+  <section id="main_banner">
+    <div class="inner">
+      <div class="bx-slider">
+        <img class="img_responsive" src="images/main_banner01.jpg" alt="1" title="여기에 배너 설명글을 작성">
+        <img class="img_responsive" src="images/main_banner02.jpg" alt="2">
+        <img class="img_responsive" src="images/main_banner03.jpg" alt="3">
+      </div>
+    </div><!-- end inner -->
+  </section>
+
+  <!-- 메인 콘텐츠 -->
+  <section id="top_seller">
+    <div class="container">
+      <h2>BEST PRODUCT</h2>
+      <div class="category_menu">
+        <a href="#" class="all">ALL</a>
+        <a href="#" class="woman">Instrument</a>
+        <a href="#" class="man">Material</a>
+      </div>
+      <ul class="item_list">
+        <!-- 여기에 자바스크립트로 상품목록 추가됨 -->
+        <!-- 225 x 323 -->
+        <!-- <li>
+          <a href="#">
+            <img src="http://placehold.it/225x323" alt="노카라 트위드 자켓">
+            <span class="title">EGOIST</span>
+            <span class="name">라글란 루즈핏 반핸드메이드 코트 PK4HC087</span>
+            <del class="origin_price">368,000원</del>
+            <ins class="sale_price"><strong>214,800원</strong></ins>
+          </a>
+        </li> -->
+      </ul>
+    </div><!-- end container-->
+  </section>
+
+  <section id="new_product">
+    <div class="container">
+      <h2>NEW PRODUCT</h2>
+      <!-- <div class="category_menu">
+        <a href="#" class="all">ALL</a>
+        <a href="#" class="woman">WOMAN</a>
+        <a href="#" class="man">MAN</a>
+      </div> -->
+      <ul class="item_list">
+        <!-- 여기에 자바스크립트로 상품목록 추가됨 -->
+      </ul>
+    </div><!-- end container-->
+  </section>
+
+  <!-- 브랜드 추천 -->
+  <section id="brand">
+    <div class="container"><!-- end container -->
+      <h2>EVENT</h2>
+      <ul class="brand-slider">
+        <li data-num="1">
+          <!-- 이미지는 배경으로 처리 -->
+          <a href="#">
+            <!-- <span class="title">무이자행사</span> -->
+            <i class="far fa-heart"></i>
+            <ul class="hash_tag">
+              <li>#2019년 한해동안</li>
+              <li>#마음놓고 쇼핑하세요</li>
+              <li>#카드무이자</li>
+              <li>#무이자 행사</li>
+            </ul>
+            <ul class="text">
+              <li class="subject">이벤트</li>
+              <li><h4>카드무이자 행사안내</h4></li>
+              <li class="day">01.01~12.31</li>
+            </ul>
+          </a>
+        <li data-num="2">
+          <!-- 이미지는 배경으로 처리 -->
+          <a href="#">
+            <!-- <span class="title">Hot Deal</span> -->
+            <i class="far fa-heart"></i>
+            <ul class="hash_tag">
+              <li>#회원가</li>
+              <li>#회원상품권</li>
+              <li>#정액제</li>
+              <li>#100만원</li>
+              <li>#특가이벤트</li>
+            </ul>
+            <ul class="text">
+              <li class="subject">이벤트</li>
+              <li><h4>정액권 회원가 이벤트</h4></li>
+              <li class="day">11.18~12.31</li>
+            </ul>
+          </a>
+        </li>
+        <li data-num="3">
+          <!-- 이미지는 배경으로 처리 -->
+          <a href="#">
+            <!-- <span class="title">최대50%</span> -->
+            <i class="far fa-heart"></i>
+            <ul class="hash_tag">
+              <li>#초음파세척기</li>
+              <li>#기구세척</li>
+              <li>#위생관리</li>
+            </ul>
+            <ul class="text">
+              <li class="subject">이벤트</li>
+              <li><h4>기구&초음파세척기등</h4></li>
+              <li class="day">11.31~12.31</li>
+            </ul>
+          </a>
+        </li>
+        </li>
+        <li data-num="4">
+          <!-- 이미지는 배경으로 처리 -->
+          <a href="#">
+            <!-- <span class="title">for oneweek</span> -->
+            <i class="far fa-heart"></i>
+            <ul class="hash_tag">
+              <li>#학술대회</li>
+              <li>#등록권</li>
+              <li>#회원가격</li>
+              <li>#특판가격</li>
+              <li>#보수교육</li>
+              <li>#회원가 반값</li>
+            </ul>
+            <ul class="text">
+              <li class="subject">이벤트</li>
+              <li><h4>2020샤인학술대회</h4></li>
+              <li class="day">2020.02.02</li>
+            </ul>
+          </a>
+        </li>
+      </ul>
+    </div><!-- end container -->
+  </section>
+  <footer id="main_footer">
+    <div class="container">
+    <h1><img src="./images/logo.png" alt="footerlogo"></h1>
+    <p>
+      <a href="#"><strong>개인정보처리방침</strong></a>   |
+      <a href="#">영상정보처리기기운영･관리방침</a>   | 
+      <a href="#">이용약관</a>  | 
+      <a href="#">회원탈퇴</a>  | 
+    </p>
+    <p>대표이사: 홍길동 | 사업자등록번호: 123-12-123 | 주소: 서울시 강서구 강서로 | <a href="#">대표메일:dentalmarket@dentalmarket.com</a> | <a href="#"><strong>고객센터 1234-1234</strong></a></p>
+    <p>소비자피해보상보험 고객님은 안전거래를 위해 현금 등으로 결제시 저희 쇼핑몰에서 가입한 구매 안전서비스를 이용하실 수 있습니다.</p>
+    <p class="copyright">Copyright &copy; 2019 DentalMarket, All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
